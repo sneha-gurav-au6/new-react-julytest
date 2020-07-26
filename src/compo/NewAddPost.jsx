@@ -51,9 +51,9 @@ const NewAddPost = (props) => {
         </div>
     ) : (
         <div className="container">
-            <h3>Add Your New Pic with Attension Title</h3>
+            <h3>Uploaad Images</h3>
             <div>
-                <form onSubmit={handleNewPost}>
+                <form onSubmit={handleNewPost} >
                     <div className="form-group">
                         <label for="exampleFormControlInput1">
                             Upload Your Image
@@ -71,7 +71,7 @@ const NewAddPost = (props) => {
                             className="form-control"
                             id="Enjoying life in Goa"
                             name="title"
-                            placeholder="Ex- Enjoying life in Goa"
+                            
                         />
                     </div>
 
@@ -93,9 +93,7 @@ const NewAddPost = (props) => {
                             id="exampleCheck1"
                             name="checkbox"
                         />
-                        <label className="form-check-label" for="exampleCheck1">
-                            Wana Share Publically?
-                        </label>
+                        
                     </div>
                     <button value="submit">Submit</button>
                 </form>

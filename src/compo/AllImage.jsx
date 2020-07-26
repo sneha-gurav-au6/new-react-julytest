@@ -20,7 +20,7 @@ class AllImage extends Component {
                                 Create AT: {this.props.data.updatedAt}
                             </p>
                             <a href="#" class="btn btn-primary">
-                                Detils
+                               
                             </a>
                         </div>
                     </div>

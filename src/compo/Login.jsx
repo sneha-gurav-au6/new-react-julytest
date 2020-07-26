@@ -16,10 +16,10 @@ export class Logink extends Component {
         console.log(this.props.login);
         return (
             <div className="container-fluid">
-                <h1>Login </h1>
-                <form onSubmit={this.handleLogin}>
-                    <div className="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
+                <h2>Login Here!! </h2>
+                <form onSubmit={this.handleLogin} style={{ background:"#a29bfe",width:"500px"}}>
+                    <div className="form-group"style={{width:"300px",marginLeft:"70px"}}>
+                        <label for="exampleInputEmail1"><b>Email</b> </label>
                         <input
                             type="email"
                             className="form-control"
@@ -27,12 +27,10 @@ export class Logink extends Component {
                             aria-describedby="emailHelp"
                             name="email"
                         />
-                        <small id="emailHelp" className="form-text text-muted">
-                            We'll never share your email with anyone else.
-                        </small>
+                       
                     </div>
-                    <div className="form-group">
-                        <label for="exampleInputPassword1">Password</label>
+                    <div className="form-group" style={{ width: "300px", marginLeft: "70px" }}>
+                        <label for="exampleInputPassword1"><b>Password</b></label>
                         <input
                             type="password"
                             className="form-control"
@@ -47,7 +45,7 @@ export class Logink extends Component {
                             id="exampleCheck1"
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-primary" style={{ marginLeft: "170px"}}>
                         Submit
                     </button>
                 </form>

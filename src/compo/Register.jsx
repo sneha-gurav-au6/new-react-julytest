@@ -9,7 +9,7 @@ export class Registers extends Component {
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        // console.log(name,email,password)
+
         this.props.Register({ name: name, email: email, password: password });
     };
     render() {
@@ -20,15 +20,15 @@ export class Registers extends Component {
         return (
             <div className="container-fluid">
                 <h1>Register </h1>
-                <form onSubmit={this.handleRegister}>
-                    <div className="form-group">
-                        <label for="exampleInputEmail1">Your Name</label>
+                <form onSubmit={this.handleRegister} style={{ background: "#a29bfe", width: "500px" }}>
+                    <div className="form-group" style={{ width: "300px", marginLeft: "70px" }}>
+                        <label for="exampleInputEmail1"> Name</label>
                         <input
                             type="text"
                             className="form-control"
                             name="name"
                         />
-                        <label for="exampleInputEmail1">Email address</label>
+                        <label for="exampleInputEmail1" style={{ width: "300px", marginLeft: "70px" }}>Email address</label>
                         <input
                             type="email"
                             className="form-control"
@@ -36,12 +36,10 @@ export class Registers extends Component {
                             aria-describedby="emailHelp"
                             name="email"
                         />
-                        <small id="emailHelp" className="form-text text-muted">
-                            We'll never share your email with anyone else.
-                        </small>
+                        
                     </div>
                     <div className="form-group">
-                        <label for="exampleInputPassword1">Password</label>
+                        <label for="exampleInputPassword1" style={{ width: "300px", marginLeft: "70px" }}>Password</label>
                         <input
                             type="password"
                             className="form-control"
@@ -56,13 +54,13 @@ export class Registers extends Component {
                             id="exampleCheck1"
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-primary" style={{ marginLeft: "170px" }}>
                         Submit
                     </button>
                 </form>
             </div>
         );
-    }
+    }                                                                                           0
 }
 const mapStateToProps = (state)=>{
     return{
